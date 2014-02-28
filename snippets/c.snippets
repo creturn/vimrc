@@ -1,0 +1,136 @@
+snippet #
+//  ${1}
+endsnippet
+snippet ##
+/* ${1} */
+endsnippet
+snippet main
+int main(int argc, char **argv)
+{
+	${1}
+
+	return 0;
+}
+endsnippet
+snippet f
+${2:void} ${1:f_name}(${3})
+{
+	${4}
+}
+endsnippet
+snippet fd
+${2:void} ${1:f_name}(${3});${4}
+endsnippet
+snippet in
+#include <${1}>${2}
+endsnippet
+snippet in.
+#include "${1}"${2}
+endsnippet
+snippet def
+#define
+endsnippet
+snippet ifndef
+#ifndef ${1:HEAD_FILE_H}
+#define $1
+${2}
+#endif
+endsnippet
+snippet if
+if(${1}) {
+	${2}
+}
+endsnippet
+snippet elif
+else if(${1}) {
+	${2}
+}
+endsnippet
+snippet el
+else {
+	${1}
+}
+endsnippet
+snippet do
+do {
+	${2}
+} while(${1});
+endsnippet
+snippet wh
+while(${1}) {
+	${2}
+}
+endsnippet
+snippet for
+for(${1}) {
+	${2}
+}
+endsnippet
+snippet for.
+for(${1}; ${2}; ${3}) {
+	${4}
+}
+endsnippet
+snippet sw
+switch(${1}) {
+	${2}
+}
+endsnippet
+snippet cs
+case ${1}:
+	${2}
+endsnippet
+snippet tp
+typedef
+endsnippet
+snippet str
+struct ${1:st_name} {
+	${2}
+};
+endsnippet
+snippet tps
+typedef struct {
+	${1}
+} ${2:st_name};${3}
+endsnippet
+snippet em
+enum ${1:e_name}{${2}};${3}
+endsnippet
+snippet tpe
+typedef enum {
+	${1}
+} ${2:e_name};${3}
+endsnippet
+snippet p
+printf("${1}\n"${2});${3}
+endsnippet
+snippet s
+scanf("${1}", ${2});${3}
+endsnippet
+snippet fpr
+fprintf(${1:stdout}, "${2:%s}\n"${3});${4}
+endsnippet
+snippet ex
+extern
+endsnippet
+snippet con
+const
+endsnippet
+snippet un
+unsigned
+endsnippet
+snippet re
+return
+endsnippet
+snippet st
+static
+endsnippet
+snippet co
+continue;
+endsnippet
+snippet br
+break;
+endsnippet
+snippet .
+->
+endsnippet
